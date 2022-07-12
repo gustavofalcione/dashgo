@@ -99,7 +99,7 @@ export default function UserList() {
                 </Tbody>
               </Table>
               <Pagination 
-                totalCountOfRgisters={data.totalCount}
+                totalCountOfRegisters={data.totalCount}
                 currentPage={page}
                 onPageChange={setPage}
               />
@@ -111,12 +111,3 @@ export default function UserList() {
   );
 }
 
-// export const getServerSideProps: GetServerSideProps = async () => {
-//   const { users,totalCount } = await getUsers(1)
-
-//   return {
-//     props: {
-//       users,
-//     }
-//   }
-// }
